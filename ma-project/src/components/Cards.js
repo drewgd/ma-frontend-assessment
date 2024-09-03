@@ -12,7 +12,7 @@ const Cards = () => {
   // Render cards
   const renderCards = () => {
     return cardData.map((card) => (
-      <div key={card.id} className="flex flex-col justify-between items-center max-w-sm bg-white rounded-lg border-gray-100 border-2 overflow-hidden p-4 transition-shadow duration-250 hover:shadow-md">
+      <div key={card.id} className="card__item flex flex-col justify-between items-center max-w-sm bg-white rounded-lg border-gray-100 border-2 overflow-hidden p-4 transition-shadow duration-250 hover:shadow-md">
         <div className="text-center">
         <img src={card.img} alt={`Card ${card.id}`} className="w-full object-cover rounded-lg" />
           <p className="text-md text-gray-600 py-5">{card.text}</p>

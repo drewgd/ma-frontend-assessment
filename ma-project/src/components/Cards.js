@@ -17,7 +17,7 @@ const Cards = () => {
         <img src={card.img} alt={`Card ${card.id}`} className="w-full object-cover rounded-lg" />
           <p className="text-md text-gray-600 py-5">{card.text}</p>
         </div>
-        <a href="https://www.mindarc.com" className="px-4 py-2 tracking-[0.2em] uppercase text-black text-xs hover:text-white hover:bg-black transition-colors ease-in-out duration-500 inline-block rounded-full px-3 py-1 border-[3px] text-sm font-black border-black">Read more</a>
+        <a href="https://www.mindarc.com" className="px-4 py-[0.55rem] tracking-[0.2em] uppercase text-black text-[0.85rem] hover:text-white hover:bg-black transition-colors ease-in-out duration-500 inline-block rounded-full px-3 py-1 border-[3px] text-sm font-black border-black">Read more</a>
       </div>
     ));
   };

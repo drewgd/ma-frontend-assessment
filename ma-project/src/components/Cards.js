@@ -12,9 +12,9 @@ const Cards = () => {
   // Render cards
   const renderCards = () => {
     return cardData.map((card) => (
-      <div key={card.id} className="card__item max-w-[325px] flex flex-col justify-between items-center bg-white rounded-lg border-gray-100 border-2 overflow-hidden p-[20px] transition-shadow duration-250 hover:shadow-md">
+      <div key={card.id} className="card__item max-w-[325px] flex flex-col justify-between items-center bg-white rounded-md border-[#f2f2f2] border-2 overflow-hidden p-[20px] transition-shadow duration-250 hover:shadow-md shadow-sm">
         <div className="text-center">
-        <img src={card.img} alt={`Card ${card.id}`} className="w-full object-cover rounded-lg" />
+        <img src={card.img} alt={`Card ${card.id}`} className="w-full object-cover rounded-md" />
           <p className="text-md text-gray-600 py-5">{card.text}</p>
         </div>
         <a href="https://www.mindarc.com" className="px-4 py-[0.55rem] tracking-[0.2em] uppercase text-black text-[0.85rem] hover:text-white hover:bg-black transition-colors ease-in-out duration-500 inline-block rounded-full px-3 py-1 border-[3px] text-sm font-black border-black">Read more</a>

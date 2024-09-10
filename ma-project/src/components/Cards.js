@@ -12,18 +12,18 @@ const Cards = () => {
   // Render cards
   const renderCards = () => {
     return cardData.map((card) => (
-      <div key={card.id} className="card__item flex flex-col justify-between items-center max-w-sm bg-white rounded-lg border-gray-100 border-2 overflow-hidden p-4 transition-shadow duration-250 hover:shadow-md">
+      <div key={card.id} className="card__item max-w-[325px] flex flex-col justify-between items-center bg-white rounded-lg border-gray-100 border-2 overflow-hidden p-[20px] transition-shadow duration-250 hover:shadow-md">
         <div className="text-center">
         <img src={card.img} alt={`Card ${card.id}`} className="w-full object-cover rounded-lg" />
           <p className="text-md text-gray-600 py-5">{card.text}</p>
         </div>
-        <a href="https://www.mindarc.com" className="px-4 py-2 tracking-widest uppercase font-bold text-black text-bold text-xs hover:text-white hover:bg-black transition-colors ease-in-out duration-500 inline-block rounded-full px-3 py-1 border-2 border-black">Read more</a>
+        <a href="https://www.mindarc.com" className="px-4 py-2 tracking-[0.2em] uppercase text-black text-xs hover:text-white hover:bg-black transition-colors ease-in-out duration-500 inline-block rounded-full px-3 py-1 border-[3px] text-sm font-black border-black">Read more</a>
       </div>
     ));
   };
 
   return (
-    <div className="card__container flex flex-wrap justify-center gap-6 mt-6 p-4 pb-10">
+    <div className="card__container max-w-[1105px] flex flex-wrap justify-center gap-[40px] mx-auto p-6 pt-[40px] pb-10">
       {renderCards()}
     </div>
   );
